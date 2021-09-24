@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de stock</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div >
+    <div class="container">
+        <div class="azulLogin">
+            <div class="box logueo">
+                <h2>¿Ya tienes cuenta?</h2>
+                <button class="logueoBtn">Ingresa aquí</button>
+            </div>
+            <div class="box Form">
+                <h2>¿No tienes cuenta?</h2>
+                <button class="logueoBtn2">Registrate aquí</button>
+            </div>
+        </div> 
+        <div class="formularioBox">
+            <div class="form logueoForm" id="ingresar">
+                <form>
+                    <h3>Logueo</h3>
+                    <input type="text" placeholder="E-Mail" id="mail">
+                    <input type="password" placeholder="Contraseña" id="pass">
+                    <input type="submit" value="Login">
+                    <p class="error" id="recupero"></p>
+                    <img src="img.png" class="img">
+                </form>
+            </div>
+            <div class="form crearForm" id="formLogueo">
+                <form>
+                    <h3>Registrate</h3>
+                    <input type="text" placeholder="E-Mail" id="regEmail">
+                    <input type="password" placeholder="Contraseña" id="regPass">
+                    <!--<input type="password" placeholder="Confirma Contrasenia">-->
+                    <input type="submit" value="Registrar">
+                    <p class="error" id="recupero"></p>
+                    <img src="img.png">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+var firebaseConfig = {
+    apiKey: "xxxxxx",
+    authDomain: "xxxx",
+    projectId: "xxx",
+    storageBucket: "xxx",
+    messagingSenderId: "xxx",
+    appId: "xxxx"
+};
+  // Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

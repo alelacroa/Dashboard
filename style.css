@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body
+{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2196f3;
+    display: flex;
+}
+
+body.activo
+{
+    background: #f43648;
+
+}
+
+.container
+
+{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+
+.azulLogin
+
+{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
+}
+
+.azulLogin .box
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.azulLogin .box h2
+{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.azulLogin .box button
+{
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}
+
+.formularioBox
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 85%;
+    background: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.formularioBox.activo
+{
+    left: 50%;
+}
+
+.formularioBox .form
+{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    transition: 0.5s;
+}
+.formularioBox .logueoForm
+{
+    transition-delay: 0.25s;
+}
+
+.formularioBox.activo .logueoForm
+{
+    left: -100%;
+    transition-delay: 0s;
+}
+
+.formularioBox .crearForm
+{
+    left: 100%;
+    transition-delay: 0s;
+    
+}
+
+.formularioBox.activo .crearForm
+{
+    left: 0;
+    transition-delay: 0.25s;
+}
+
+
+.formularioBox .form form
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formularioBox .form form h3
+{
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+
+}
+
+.formularioBox .form input
+{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+
+}
+
+.formularioBox .form input[type="submit"]
+{
+    background: #03a9f4;
+    border: none;
+    color: #fff;
+    max-width: 100px;
+    cursor: pointer;
+
+}
+
+.formularioBox.activo .crearForm input[type="submit"]
+{
+    background: #f43648;
+}
+
+.formularioBox .form #recupero
+{
+    color: red;
+
+}
+.img
+{
+    max-width: 300px;
+}
+
+@media (max-width: 991px)
+{
+    .container
+    {
+        max-width: 400px;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .container .azulLogin
+    {
+        top: 0;
+        height: 100%;
+    }
+    .formularioBox
+    {
+        width: 100%;
+        height: 500px;
+        top: 0;
+        box-shadow: none;
+    }
+    .azulLogin .box
+    {
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        bottom: 0;
+    }
+    .box.logueo
+    {
+        top: 0;
+
+    }
+    .formularioBox.activo
+    {
+        left: 0;
+        top: 150px;
+    }
+}
+
+.logueoBtn
+{
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.logueoBtn:hover
+{
+    letter-spacing: 5px;
+}
+
+.logueoBtn2
+{
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.logueoBtn2:hover
+{
+    letter-spacing: 5px;
+}
+
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+

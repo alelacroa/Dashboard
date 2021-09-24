@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*
+{
+    font-family: 'Nunito', sans-serif;
+}
+
+body
+{
+    background: #e5f1f8;
+}
+
+table .btnEditar
+{
+    cursor: pointer;
+    
+}
+
+table .btnEliminar
+{
+    cursor: pointer;
+}
+
+.cli
+{
+    background: #2E4756;
+    display: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+.infoclim
+{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    margin-left: 80px;
+    padding: 200px;
+
+
+}
+
+.infocaja
+{
+    background-color: #EE7752;
+    text-align: center;
+}
+
+
